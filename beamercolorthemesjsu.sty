@@ -1,0 +1,89 @@
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\ProvidesPackageRCS $Header: /cvsroot/latex-beamer/latex-beamer/themes/color/beamercolorthemesjsu.sty,v 1.4 2007/01/28 20:48:24 tantau Exp $
+
+% https://www.sjsu.edu/communications/docs/SCM_051721_SJSU-Brand-Style-Guide.pdf
+% https://www.cpt.univ-mrs.fr/~masson/latex/Beamer-appearance-cheat-sheet.pdf
+
+
+\definecolor{beige}{RGB}{210,194,149}
+\definecolor{darkbeige}{RGB}{179,153,93}
+
+\definecolor{sjsublue}{RGB}{0,85,162}
+\definecolor{sjsugold}{RGB}{229,168,35}
+\definecolor{coolgray}{RGB}{83,86,90}
+\definecolor{boxgray}{RGB}{238,235,233}
+\definecolor{black}{RGB}{15,15,15}
+
+
+
+\mode<presentation>
+
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg= sjsublue}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg= coolgray}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg= sjsugold}
+\setbeamercolor*{palette quaternary}{fg=white,bg= darkbeige}
+
+
+% Headline, Sidebar, Footer
+\setbeamercolor*{sidebar}{use=structure,bg= beige}
+% \setbeamercolor{headline}{bg=sjsugold,fg=white}
+% \setbeamercolor{headline}{bg=white,fg=sjsublue}
+\setbeamercolor{headline}{bg=sjsublue,fg=white}
+\setbeamercolor{headline title}{fg=sjsugold}
+\setbeamercolor{headline rule}{bg=sjsugold}
+
+% Block
+\setbeamercolor{block title}{fg=sjsublue,bg=white}
+\setbeamercolor{block separator}{bg=black}
+\setbeamercolor{block body}{fg=black,bg=white}
+  
+
+\setbeamercolor*{palette sidebar primary}{use=structure,fg=structure.fg!10}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{use=structure,fg=structure.fg!50}
+\setbeamercolor*{palette sidebar quaternary}{fg=white}
+
+\setbeamercolor*{titlelike}{parent=palette primary}
+\setbeamercolor*{foot line}{parent=palette secondary}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\setbeamercolor{itemize item}{fg=sjsugold}
+\setbeamercolor{itemize subitem}{fg=sjsugold}
+\setbeamercolor{itemize subsubitem}{fg=sjsugold}
+\setbeamercolor{enumerate item}{fg=sjsugold}
+\setbeamercolor{enumerate subitem}{fg=sjsugold}
+\setbeamercolor{enumerate subsubitem}{fg=sjsugold}
+\setbeamercolor{description item}{fg=sjsublue}
+\setbeamercolor{caption name}{fg=sjsublue}
+
+\setbeamertemplate{bibliography item}[text]
+\setbeamertemplate{frametitle continuation}[from second]
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor*{bibliography entry location}{fg=black}
+\setbeamercolor*{bibliography entry note}{fg=black}
+
+\setsansfont{Open Sans}
+\setmainfont{Merriweather}
+
+\setbeamerfont{headline}{family=\rmfamily}
+\setbeamerfont{headline title}{size=\Huge,series=\bfseries}
+\setbeamerfont{headline author}{family=\sffamily, size=\Large}
+\setbeamerfont{headline institute}{family=\sffamily, size=\normalsize}
+\setbeamerfont{block title}{family=\rmfamily, size=\large,series=\bfseries}
+\setbeamerfont{block body}{size=\large}
+\setbeamerfont{heading}{series=\bfseries}
+\setbeamerfont{caption}{size=\small}
+\setbeamerfont{footline}{family=\rmfamily,size=\normalsize}
+
+\mode<all>
